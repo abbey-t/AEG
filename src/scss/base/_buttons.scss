@@ -1,0 +1,17 @@
+.btn {
+	font-size: .889em;
+	line-height: 1.875em;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: .5em;
+	
+	&:after {
+		content:'';
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		bottom: 0; left: 0;
+		background: $red;
+	}
+}

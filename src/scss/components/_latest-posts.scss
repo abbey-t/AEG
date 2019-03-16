@@ -1,0 +1,57 @@
+section.latest-posts {
+	margin-top: 12.5em;
+	margin-bottom: 12.5em;
+	
+	h2 {
+		text-align: center;
+	}
+	
+	.post-item {
+		display: block;
+		margin-bottom: 8rem;
+		
+		@media #{$mq-large} {
+			margin-bottom: 0;
+		}
+		
+		.image {
+			height: 65vw;
+			background: no-repeat center;
+			background-size: cover;
+			position: relative;
+			margin-bottom: 1.5em;
+			
+			@media #{$mq-tablet} {
+				height: 45vw;
+			}
+			
+			@media #{$mq-desktop} {
+				height: 290px;
+			}
+			
+			&:after {
+				content: '';
+				height: 4px;
+				width: 100%;
+				position: absolute;
+				bottom: 0; left: 0;
+				background: $red;
+			}
+		}
+		
+		h3 {
+			font-size: 1em;
+			font-weight: 600;
+			text-transform: none;
+			margin-bottom: 1em;
+		}
+		
+		p {
+			margin-bottom: 1.111em;
+			color: $grey;
+			font-size: .889em;
+			line-height: 1.875em;
+		}
+	}
+}
+

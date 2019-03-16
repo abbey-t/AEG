@@ -64,3 +64,17 @@
  
   #{$property}: $value;
 }
+ 
+
+@mixin underline($color: #fff) {
+	position: relative;
+	
+	&:after {
+		content: '';
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		left: 0; bottom: 0;
+		background: $color;
+	}
+}

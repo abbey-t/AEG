@@ -12,3 +12,8 @@ $mq-tablet:  "only screen and (min-width: " + $bp-sml + ")";
 $mq-mob:  "only screen and (max-width: " + ($bp-sml - 1) + ")";
 $mq-mob-sml:  "only screen and (max-width: " + ($bp-xs) + ")";
 $mq-mob-xs:  "only screen and (max-width: 400px)";
+
+// Colours
+$black: #0E1414;
+$red: #CF1430;
+$grey: #C2C2C2;

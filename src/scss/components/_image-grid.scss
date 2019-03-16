@@ -1,0 +1,83 @@
+section.image-grid {
+	margin-top: 10em;
+	
+	@media #{$mq-desktop} {
+		min-height: 600px;
+		display: flex;
+	}
+	
+	.images {
+		display: flex;
+		
+		> .image-container {
+			width: 100%;
+			
+			@media #{$mq-large} {
+				display: flex;
+			}
+			
+			> div {
+				
+				&:first-child {
+					margin-bottom: 24px;
+				}
+				
+				@media #{$mq-tablet} {
+					&:first-child {
+						padding-left: 0;
+						margin-bottom: 0;
+					}
+					
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+				
+				@media #{$mq-desktop} {
+					&:first-child {
+						margin-bottom: 24px;
+					}
+					
+					&:first-child, &:last-child {
+						padding-left: 12px;
+						padding-right: 12px;
+					}
+					
+				}
+				
+				@media #{$mq-large} {
+					margin: 0;
+				}
+			}
+		}
+		
+		.grid-item {
+			
+			&.half {
+				width: calc(50% - 12px);
+				float: left;
+				
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
+				
+				@media #{$mq-tablet} {
+					width: auto;
+					float: none;
+					
+					&:not(:last-child) {
+						margin: 0 0 1.445em;
+					}
+				}
+			}
+		}
+	}
+	
+	.text .inner {
+		padding: 0 12px;
+		
+		@media #{$mq-tablet} {
+			padding: 0;
+		}
+	}
+}
