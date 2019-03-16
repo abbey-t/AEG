@@ -1,0 +1,66 @@
+@mixin smooth($property: all, $speed: .2s) {
+	-webkit-transition: $speed ease-in-out $property;
+	-moz-transition: $speed ease-in-out $property;
+	-ms-transition: $speed ease-in-out $property;
+	transition: $speed ease-in-out $property;
+}
+
+@mixin centerV() {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin centerH() {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@mixin center() {
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@mixin clearfix() {
+	&:after {
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+}
+
+@mixin noListDefaults() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+
+    &:focus {
+        @content;
+    }
+
+    &:active {
+        @content;
+    }
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  #{$property}: $value;
+}

@@ -1,0 +1,18 @@
+# system
+.DS_Store
+node_modules/
+package-lock.json
+yarn.lock
+robots.txt
+
+# filetypes
+*.sql
+*.zip
+*.tar.gz
+*.sublime-*
+/*.pdf
+
+# assets
+assets/*
+!assets/images
+!assets/fonts
