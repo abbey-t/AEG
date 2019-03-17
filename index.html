@@ -11,7 +11,7 @@
 <body>
 	<main class="container">
 		<section class="image-grid row">
-			<div class="text col-lg-4 col-lg-push-8 col-md-6 col-md-push-6 col-sm-12">
+			<div class="text col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-12">
 				<div class="inner">
 					<h3 class="line">Answer your body's needs</h3>
 					<p>The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally devolops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs.</p>
@@ -19,15 +19,15 @@
 					<p><strong>Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</strong></p>
 				</div>
 			</div>
-			<div class="images col-lg-8 col-lg-pull-4 col-md-6 col-md-pull-6 col-sm-12">
+			<div class="images col-lg-8 col-lg-pull-4 col-md-7 col-md-pull-5 col-sm-12">
 				<div class="image-container">
-					<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-						<img class="grid-item" src="assets/images/father-son.jpg" alt="Father and son" />
+					<div class="col-lg-6 col-sm-6 col-xs-12">
+						<img class="grid-item" data-aos="fade-in" src="assets/images/father-son.jpg" alt="Father and son" data-toggle="modal" data-target="#image-grid-1"/>
 						<!-- Cropped to 768x1212px -->
 					</div>
-					<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-						<img class="grid-item half" src="assets/images/bowl.jpg" alt="Fruit bowl" />
-						<img class="grid-item half" src="assets/images/asparagus.jpg" alt="Asparagus" />
+					<div class="col-lg-6 col-sm-6 col-xs-12">
+						<img class="grid-item half" data-aos="fade-in" src="assets/images/bowl.jpg" alt="Fruit bowl" data-toggle="modal" data-target="#image-grid-2" />
+						<img class="grid-item half" data-aos="fade-in" src="assets/images/asparagus.jpg" alt="Asparagus" data-toggle="modal" data-target="#image-grid-3" />
 						<!-- Cropped to 768x580px -->
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 			<h2>All the latest from AEG</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="#" class="post-item">
+					<a href="#" class="post-item js-link" data-link="Post item 1" data-aos="fade-in">
 						<div class="image" style="background-image:url('assets/images/post-1.jpg')"></div>
 						<h3>Summer Lunch Menu By Mark Best</h3>
 						<p>AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
@@ -46,7 +46,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="#" class="post-item">
+					<a href="#" class="post-item js-link" data-link="Post item 2" data-aos="fade-in">
 						<div class="image" style="background-image:url('assets/images/post-2.jpg')"></div>
 						<h3>A Traditional Christmas Eve, Mark Best Style</h3>
 						<p>One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p>
@@ -54,7 +54,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="#" class="post-item">
+					<a href="#" class="post-item js-link" data-link="Post item 3" data-aos="fade-in">
 						<div class="image" style="background-image:url('assets/images/post-3.jpg')"></div>
 						<h3>Taking Taste Further</h3>
 						<p>This exclusive cookbook gives you all the know‑how you need. We’ve designed it to make sure you get the most out of our products – and the best out of your food.</p>
@@ -64,5 +64,28 @@
 			</div>
 		</section>
 	</main>
+	
+	
+	<div id="image-grid-1" class="modal fade" role="dialog">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<div class="modal-dialog">
+			<img src="assets/images/father-son.jpg" alt="Father and son" />
+		</div>
+	</div>
+	
+	<div id="image-grid-2" class="modal fade" role="dialog">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<div class="modal-dialog">
+			<img src="assets/images/bowl.jpg" alt="Fruit bowl" />
+		</div>
+	</div>
+	
+	<div id="image-grid-3" class="modal fade" role="dialog">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<div class="modal-dialog">
+			<img src="assets/images/asparagus.jpg" alt="Asparagus" />
+		</div>
+	</div>
+	
 </body>
 </html>

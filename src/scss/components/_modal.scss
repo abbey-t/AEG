@@ -1,0 +1,39 @@
+.modal {
+	.close {
+		position: absolute;
+	    top: 9px;
+		right: 18px;
+	    background: transparent;
+	    border: none;
+	    font-size: 2em;
+	    line-height: 1em;
+	    padding: 0;
+	    @include smooth();
+	    
+	    @include hover {
+		    color: $red;
+	    }
+	}
+	
+	.modal-dialog {
+		max-height: 90vh;
+		max-width: 90vw;
+		text-align: center;
+	
+		img {
+			max-height: 90vh;
+		}
+		
+		@media #{$mq-tablet} {
+			max-height: calc(100vh - 60px);
+			
+			img {
+				max-height: calc(100vh - 60px);
+			}
+		}
+	}
+}
+
+.modal-backdrop.in {
+	opacity: 0.8;
+}

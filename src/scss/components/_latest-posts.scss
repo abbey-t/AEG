@@ -2,6 +2,10 @@ section.latest-posts {
 	margin-top: 12.5em;
 	margin-bottom: 12.5em;
 	
+	@media #{$mq-mob} {
+		padding: 0 12px;
+	}
+	
 	h2 {
 		text-align: center;
 	}
@@ -9,6 +13,14 @@ section.latest-posts {
 	.post-item {
 		display: block;
 		margin-bottom: 8rem;
+		
+		@media #{$mq-tablet} {
+			&:hover {
+				.image:after {
+					height: 6px;
+				}
+			}
+		}
 		
 		@media #{$mq-large} {
 			margin-bottom: 0;
@@ -36,6 +48,7 @@ section.latest-posts {
 				position: absolute;
 				bottom: 0; left: 0;
 				background: $red;
+				@include smooth();
 			}
 		}
 		

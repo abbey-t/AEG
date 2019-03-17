@@ -33,17 +33,7 @@ section.image-grid {
 					}
 				}
 				
-				@media #{$mq-desktop} {
-					&:first-child {
-						margin-bottom: 24px;
-					}
-					
-					&:first-child, &:last-child {
-						padding-left: 12px;
-						padding-right: 12px;
-					}
-					
-				}
+				
 				
 				@media #{$mq-large} {
 					margin: 0;
@@ -52,23 +42,42 @@ section.image-grid {
 		}
 		
 		.grid-item {
+			cursor: pointer;
+			
+			@media #{$mq-tablet} {
+				@include smooth();
+				
+				@include hover {
+					opacity: .5;
+				}
+			}
 			
 			&.half {
 				width: calc(50% - 12px);
 				float: left;
 				
-				&:not(:last-child) {
-					margin-right: 24px;
-				}
-				
 				@media #{$mq-tablet} {
 					width: auto;
 					float: none;
+				}
+				
+				&:not(:last-child) {
+					margin-right: 24px;
 					
-					&:not(:last-child) {
-						margin: 0 0 1.445em;
+					@media #{$mq-tablet} {
+						margin: 0 0 23px;
+					}
+					
+					@media #{$mq-desktop} {
+						margin-bottom: 1em;
+					}
+					
+					@media #{$mq-large} {
+						margin: 0 0 26px;
 					}
 				}
+				
+				
 			}
 		}
 	}
