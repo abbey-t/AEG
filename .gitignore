@@ -11,8 +11,3 @@ robots.txt
 *.tar.gz
 *.sublime-*
 /*.pdf
-
-# assets
-assets/*
-!assets/images
-!assets/fonts
